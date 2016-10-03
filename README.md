@@ -27,4 +27,10 @@ Download the windows crome driver zip, extract the executable, and simply place 
 
 ## Running the Project
 
-The command for running the project is <code>gradle clean test aggregate</code> while in the project root directory
+The command for running the project is <code> > gradle clean test aggregate</code> while in the project root directory.
+Gradle will download dependencies on the first run, so it may take some time. Once all dependencies are satisfied, the tests will execute.
+
+## Viewing the Results
+
+Once all tests are done, Serenity generates html reports of the results. These accessible in the file <code>.\target\site\serenity\index.html</code>
+The report will show which tests passed and which tests have failed.
